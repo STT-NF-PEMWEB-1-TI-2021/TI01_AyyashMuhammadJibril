@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html scroll-behavior: smooth; lang="en">
+<head>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <style>
+         body {
+            text-align: left;
+            font-family: lato, sans-serif;
+            color: 40514E;
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            background-color: white;
+            max-width: 470px;
+            margin: auto;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery Form</title>
+</head>
+<body>
+    <div style="background-color: #e4e4e4; padding: 5px 0px 20px 20px ;">
+        <h3>Black Goose Bistro | Pizza-On-Demand</h3>
+    <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+    <p>Your Information</p>
+    <form style="line-height: 25px;" method="post" action="./thankyou.html">
+        Name : <input type="text" name="username">
+        <br>
+        Address : <input type="text" name="address">
+        <br>
+        Telephone Number : <input type="number">
+        <br>
+        Email : <input type="email">
+        <br>
+        Delivery Instructions :
+        <br>
+        <textarea placeholder="No more than 400 characters long" name="instruct" id="" cols="40" rows="5" maxlength="400"></textarea>
+        <p><b>Design your Dream Pizza:</b><br>Pizza specs</p>
+        Crust (Choose one):
+        <ol class="crust" style="list-style: none;">
+            <li><input name="crust" value="Classic White" type="radio">Classic White</li>
+            <li><input name="crust" value="Multigrain" type="radio">Multigrain</li>
+            <li><input name="crust" value="Cheese-stuffed crust" type="radio">Cheese-stuffed crust</li>
+            <li><input name="crust" value="Gluten-free" type="radio">Gluten-free</li>
+        </ol>
+        Toppings (Choose as many as you want):
+        <ol class="toppings" style="list-style: none;">
+            <li><input checked name="toppings" type="checkbox">Red Sauce</li>
+            <li><input name="toppings" type="checkbox">White sauce</li>
+            <li><input name="toppings" type="checkbox">Mozarella Cheese</li>
+            <li><input name="toppings" type="checkbox">Pepperoni</li>
+            <li><input name="toppings" type="checkbox">Mushrooms</li>
+            <li><input name="toppings" type="checkbox">Peppers</li>
+            <li><input name="toppings" type="checkbox">Anchovies</li>
+        </ol>
+        <p>Quantity<br>How many pizza(s) 
+            <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </p>
+        <input style="margin-right: 10px;" type="submit" value="Get my pizza going right now!">
+        <input type="reset" value="I guess i'm having a second thought">
+    </form>
+    </div>
+</body>
+</html>
