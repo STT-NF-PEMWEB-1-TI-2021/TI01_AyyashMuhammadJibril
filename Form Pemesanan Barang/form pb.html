@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html scroll-behavior: smooth; lang="en">
+<head>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: lato, sans-serif;
+        }
+        .topbar {
+            width: 1000px;
+            margin: auto;
+            background-color: wheat;
+        }
+        .li1 {
+            padding: 0px 20px;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 1150px;background-color: beige;margin: auto;">
+        <div class="topbar" style="padding: 10px 10px 10px 10px;border: 3px solid;">
+            <table style="margin: auto;">
+                <tr>
+                    <td style="padding: 0 40px;">Home</td>
+                    <td style="padding: 0 40px;">Generate Link</td>
+                    <td style="padding: 0 40px">Transaction History</td>
+                    <td style="padding: 0 40px">Policy</td>
+                    <td style="padding: 0 40px">Logout</td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin: 0 0 0 80px;width: 1000px;padding: 60px;">
+            <form style="line-height: 25px;display: flex;" method="post" action="" >
+                <div style="width: 320px;">
+                    <label><img width="150px" height="150px" src="" alt="Your Picture"></label>
+                    <br>
+                    <input type="file">
+                </div>
+                    <div>
+                        Title Here &nbsp;&nbsp; : <input style="margin-left: 80px;" type="text">
+                        <br>
+                        Description &nbsp;&nbsp; : <textarea style="margin: 20px 0 0 69px;" name="" id="" cols="30" rows="10"></textarea>
+                        <br>
+                        Account Number &nbsp;&nbsp; : <input style="margin: 20px 0 0 31px;" type="text">
+                        <br>
+                        Bank &nbsp;&nbsp; : <input style="margin: 20px 0 0 115px;" type="text">
+                        <br>
+                        Account Holder &nbsp;&nbsp; : <input style="margin: 20px 0 0 40px;" type="text">
+                        <br>
+                        Transaction &nbsp;&nbsp; : <select style="margin: 20px 0 0 69px;" name="quantity" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>    
+                            <option value="3">3</option>
+                        </select>
+                        <br>
+                        <small style="margin-left: 169px;">*If the transaction is for 3 person, choose 3 from the drop-down list</small>
+                        <br>
+                        <input style="margin-left:169px;" name="send" type="checkbox"> Send to Mobile Phone
+                        <br>
+                        <input style="margin-left:169px;" name="send" type="checkbox"> Send to Email
+                        <br>
+                        Send to Mobile Phone&nbsp;&nbsp; : <input type="number">
+                        <br>
+                        Send to Email &nbsp;&nbsp; : <input style="margin-left: 55px;" type="email">
+                        <br>
+                        <input style="margin-left: 169px;" type="submit">
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
