@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: lato, sans-serif;
+            margin: 0;
+            color: 40514E;
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            background-color: #e4e4e4;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        nav {
+            background-color: #1b1b1b;
+            color: wheat;
+            width: 100%;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .nav1 {
+            flex: 1;
+            text-align: left;
+
+        }
+        .nav2 {
+            flex: 1;
+            text-align: right;
+        }
+        .nav3 {
+            flex: 1;
+            text-align: left;
+        }
+        .nav4 {
+            float: right;
+            text-align: right;
+            margin-bottom: 20px;
+   
+        }
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+        .li1 {
+            display: inline-block;
+            margin-right: 20px;
+            border-right: 1px solid;
+            padding-right: 20px;
+        }
+        .li2 {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .li3 {
+            display: inline-block;
+            margin-right: 10px;
+            border-right: 1px solid white;
+            padding-right: 20px;
+        }
+        .li4 {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #e4e4e4;
+        }
+        .shop {
+            border: solid 1px;
+            padding: 5px;
+        }
+        .navbtn {
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .main {
+            margin: 40px;
+        }
+        .summary {
+            float: right;
+            background-color: #1b1b1b;
+            width: 300px;
+            height: 290px;
+            color: wheat; 
+            padding-left: 10px; 
+            padding-bottom: 20px;
+        }
+        .summaryc {
+            margin: 30px 30px 10px 13px;
+        }
+        .list {
+            float: left;
+            max-width: 500px;
+            padding: 0 0 100px;
+        }
+        .th1 {
+            padding-left: 50px;
+        }
+        .th2 {
+            padding-left: 275px;
+        }
+        .th3 {
+            padding-left: 50px;
+        }
+        .td1 {
+            padding-left: 10px; 
+            padding-top: 10px;
+        }
+        .td2 {
+            padding-left: 10px;
+        }
+        .td3 {
+            padding-left: 160px;
+        }
+        .td4 {
+            padding-left: 50px;
+        }
+        .btn1 {
+            background-color: wheat; 
+            border:none;
+            align-items: center;
+            margin: 20px 80px; 
+            width: 100px; 
+            height: 30px;
+        }
+        .btn2 {
+            float: left;
+        }
+        .navpart2 {
+            display: inline-block; 
+            width: 100%; 
+            height: 150px;
+        }
+        .li5 {
+            margin-bottom: 10px; 
+            text-align:left;
+        }
+        #input1 {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Cart & Checkout Screen</title>
+</head>
+<nav>
+    <div class="navbar">
+        <div class="shop">
+            <h3>Mirezka <br> Goodies</h3>
+        </div>
+        <nav class="nav1">
+            <ul id="category">
+                <li class="li1"><a href="">Home</a></li>
+                <li class="li1"><a href="">About</a></li>
+                <li class="li1"><a href=""></a>Products</li>
+            </ul>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <li class="li2"><button class="navbtn"><img width="20px" height="20px" src="./images/search.png" alt=""></button></li>
+                <li class="li2"><a href="./cart.html"><button class="navbtn"><img width="20px" height="20px" src="./images/cart.png" alt=""></button></a></li>
+                <li class="li2">Cart (1)</li>
+            </ul>
+        </nav>
+    </div>
+    </nav>
+<body>
+    <div class="main">
+        <div class="list">
+            <h2>Your Cart</h2>
+            <table>
+                <th class="th1">Item</th>
+                <th class="th2">Price</th>
+                <th class="th3">Quantity</th>
+            </table>
+            <hr>
+            <table>
+                <td class="td1">
+                    <img src="./images/baju.png" width="100">
+                </td>
+                <td class="td2">
+                    Thunder "Kachow" Shirt
+                    <br>
+                    <select name="size">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </td>
+                <td class="td3">$20.00</td>
+                <td class="td4">
+                    <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">5</option>
+                    <option value="3">10</option>
+                    <option value="5">15</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    </select>
+                </td>
+            </table>
+        </div>
+        <div class="summary" >
+            <div class="summaryc">
+            <h3>Summary &nbsp; (1)</h3>
+            <p>Subtotal &emsp;&emsp;:&emsp;$20.00</p>
+            <p>Shopping &emsp;&nbsp;&nbsp;&nbsp;:&emsp;-</p>
+            <p>Est. Taxes &emsp;&nbsp;&nbsp;:&emsp;-</p>
+            <hr>
+            <p><b>Total&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:&emsp;$20.00</b></p>
+            <a href="./checkout.html"><button class="btn1"><b>Checkout</b></button></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navpart2">
+        <div class="navbar">
+            <div class="shop">
+                <h3>Mirezka <br> Goodies</h3>
+            </div>
+            <nav class="nav1">
+                <ul id="category">
+                    <li class="li1"><a href="">Category X</a></li>
+                    <li class="li1"><a href="">Category Y</a></li>
+                    <li class="li1"><a href="">Category Z</a></li>
+                </ul>
+            </nav>
+            <nav class="nav2">
+                <ul>
+                    <li class="li5">Keep in touch</li>
+                    <input type="text" name="" id="input1"><br>
+                    <button class="btn2">Submit</button>
+                </ul>   
+            </nav>
+        </div>
+        </nav>
+</body>
+</html>
