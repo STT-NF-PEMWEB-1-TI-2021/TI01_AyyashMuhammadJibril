@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            color: white;
+        }
+        body {
+            background-color: pink;
+        }
+        .container {
+            margin: 50px;
+        }
+        .container2 {
+            display: flex;
+        }
+        header, footer {
+            background-color: rgb(113, 190, 190);
+        }
+        header, aside, article, footer {
+            padding: 1em;
+            text-align: center;
+            margin: 10px;
+        }
+        aside {
+            background-color: teal;
+            flex: 1 1 auto;
+            height: 50vh;
+            align-items: center;
+        }
+        article {
+            background-color: rgb(218, 94, 125);
+            flex: 3 1 auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 10px;
+            flex-direction: column;
+        }
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="container2">
+            <aside>Aside</aside>
+            <article>
+                <p>Article</p>
+                <div>
+                    <img src="./assets/python.png" alt="">
+                    <img src="./assets/sugar-cube.png" alt="">
+                    <img src="./assets/true-or-false.png" alt=""> 
+                </div>
+            </article>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
