@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main {
+            margin: auto;
+        }
+        .container {
+            margin: auto;
+            text-align: center;
+            background: wheat;
+            width: max-content;
+            padding: 50px;
+        }
+        .form-group {
+            margin: 20px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        button {
+            width: 80px;
+        }
+        select {
+            width: 100px;
+        }
+        input {
+            width: 200px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h2 style="text-align: center;">Check-in Keberangkatan Pesawat</h2>
+        <div class="container">
+            <form method="post" action="berhasil.html" id="check" name="check" onsubmit="return validForm()">
+                <div class="form-group">
+                    <label>Nama Pelanggan:</label><br>
+                    <input type="text" placeholder="Max 30 characters" required
+                        maxlength="30" id="name">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label><br>
+                    <input type="email" placeholder="example@gmail.com" required
+                        id="email">
+                </div>
+                <div class="form-group">
+                    <label>Jam Keberangkatan:</label>
+                    <br>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-group">
+                    <label>Tujuan Keberangkatan:</label><br>
+                    <input type="text" id="destination" required>
+                </div>
+                <div class="form-group">
+                    <label>Jumlah Tiket:</label>
+                    <br>
+                    <select name="ticket" id="ticket">
+                        <option value="0"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+<script src="./js/form.js"></script>
+</body>
+</html>

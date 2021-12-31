@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="./js/otentikasi.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(120deg,#292a2b,#b4afb4);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .mainBlock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background: white;
+            border-radius: 10px;
+        }
+        .mainBlock h1 {
+            text-align: center;
+            padding: 0 0 20px 0;
+            border-bottom: solid 1px gray;
+        }
+        .mainBlock form {
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+        form .textField {
+            position: relative;
+            border-bottom: 2px solid gray;
+            margin: 30px 0;
+        }
+        .textField input {
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }
+        .textField label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            color: rgb(179, 179, 179);
+            transform: translateY(-50%);
+            pointer-events: none;
+            transition: .2s;
+        }
+        .textField span::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #4c4f8a;
+            transition: .5s;
+        }
+        .textField input:focus ~ label,
+        .textField input:valid ~ label{
+            top: -5px;
+            color: #4c4f8a;
+        }
+        .textField input:focus ~ span::before,
+        .textField input:valid ~ span::before{
+            width: 100%;
+
+
+        }
+        .noPass{
+            margin: -5px 0 20px 5px;
+            color: #347fbd;
+            cursor: pointer;
+            width: 130px;
+        }
+        input[type="submit"]{
+            width: 100%;
+            height: 50px;
+            border: 2px solid;
+            outline: none;
+            background: #292a2b;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            color: rgb(219, 219, 219);
+            margin: 30px 0;    
+        }
+        input[type="submit"]:hover{
+             border-color: #4c4f8a;
+             transition: .5s;
+        }
+    </style>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="mainBlock">
+        <h1>Login</h1>
+        <form action="berhasil.html" method="post">
+            <div class="textField">
+                <input id="username" type="text" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="textField">
+                <input id="password" type="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="noPass" onclick="hint()">Forgot Password?</div>
+            <input type="submit" onclick="return login()" value="Sign in">
+        </form>
+    </div>
+</body>
+</html>
