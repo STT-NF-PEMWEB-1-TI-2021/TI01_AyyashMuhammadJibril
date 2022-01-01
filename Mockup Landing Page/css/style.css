@@ -1,0 +1,16 @@
+body {
+    
+}
+
+.jumbo1  {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photo-1506744038136-46273834b3fb.jpg);
+    color: white;
+}
+
+.row {
+    margin: 50px 0;
+}
+.col-md-12 img {
+    width: 5%;
+    margin: 10px 10px;
+}
