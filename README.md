@@ -1,2 +1,2 @@
 # TI01_AyyashMuhammadJibril
-Repository untuk seluruh tugas dari pemrograman web.
+Repository untuk seluruh tugas dari matkul Pemrograman Web
